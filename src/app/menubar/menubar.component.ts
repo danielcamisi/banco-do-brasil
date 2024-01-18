@@ -11,7 +11,7 @@ export class MenubarComponent implements OnInit{
   ngOnInit() {
     this.items = [
         {
-            label: 'File',
+            label: 'Conta',
             icon: 'pi pi-fw pi-file',
             items: [
                 {

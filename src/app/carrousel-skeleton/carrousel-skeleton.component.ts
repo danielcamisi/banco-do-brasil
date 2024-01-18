@@ -9,8 +9,9 @@ import {ProductService} from  './productService/productService';
 })
 export class AppCarrouselSkeleton implements OnInit{
   products?: any;
-
+    quantidade?:any;
   responsiveOptions?: any;
+ProductService: any;
 
   constructor(private productService: ProductService) {}
 
@@ -18,6 +19,10 @@ export class AppCarrouselSkeleton implements OnInit{
       this.productService.getProductsSmall().then((products) => {
           this.products = products;
       });
+
+      this.productService.getProductsLength().then((quantidade) => {
+        this.quantidade = quantidade;
+    });
 
      this.responsiveOptions = [
           {

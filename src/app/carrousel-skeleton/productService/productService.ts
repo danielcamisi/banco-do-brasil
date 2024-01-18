@@ -7,8 +7,8 @@ export class ProductService {
             {
                 id: '1000',
                 code: 'f230fh0g3',
-                name: 'Bamboo Watch',
-                description: 'Product Description',
+                name: 'Investimentos',
+                description: 'Verifique suas possibilidades de investimentos',
                 image: 'bamboo-watch.jpg',
                 price: 65,
                 category: 'Accessories',
@@ -19,8 +19,8 @@ export class ProductService {
             {
                 id: '1001',
                 code: 'nvklal433',
-                name: 'Black Watch',
-                description: 'Product Description',
+                name: 'Cartões',
+                description: 'Seus cartões merecem atenção',
                 image: 'black-watch.jpg',
                 price: 72,
                 category: 'Accessories',
@@ -31,8 +31,8 @@ export class ProductService {
             {
                 id: '1002',
                 code: 'zz21cz3c1',
-                name: 'Blue Band',
-                description: 'Product Description',
+                name: 'Extrato',
+                description: 'Confira seus gastos, despesas, e se organize',
                 image: 'blue-band.jpg',
                 price: 79,
                 category: 'Fitness',
@@ -91,8 +91,8 @@ export class ProductService {
             {
                 id: '1007',
                 code: 'mbvjkgip5',
-                name: 'Galaxy Earrings',
-                description: 'Product Description',
+                name: 'Poupança',
+                description: 'Confira sua reserva para seu futuro',
                 image: 'galaxy-earrings.jpg',
                 price: 34,
                 category: 'Accessories',
@@ -103,8 +103,8 @@ export class ProductService {
             {
                 id: '1008',
                 code: 'vbb124btr',
-                name: 'Game Controller',
-                description: 'Product Description',
+                name: 'Produtos',
+                description: 'Analise possíveis acordos e possibilidades dentro do banco',
                 image: 'game-controller.jpg',
                 price: 99,
                 category: 'Electronics',
@@ -115,8 +115,8 @@ export class ProductService {
             {
                 id: '1009',
                 code: 'cm230f032',
-                name: 'Gaming Set',
-                description: 'Product Description',
+                name: 'Suporte',
+                description: 'Entre em contato conosco',
                 image: 'gaming-set.jpg',
                 price: 299,
                 category: 'Electronics',
@@ -1207,6 +1207,9 @@ export class ProductService {
 
     getProductsSmall() {
         return Promise.resolve(this.getProductsData().slice(0, 10));
+    }
+    getProductsLength(){
+        return Promise.resolve(this.getProductsData().length);
     }
 
     getProducts() {

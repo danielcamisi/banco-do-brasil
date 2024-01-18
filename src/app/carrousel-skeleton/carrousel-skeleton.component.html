@@ -1,12 +1,11 @@
-<p-carousel [value]="products" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+
+
+<p-carousel [value]="products" [numVisible]="3" [numScroll]="quantidade" [circular]="false">
     <ng-template let-product pTemplate="item">
-        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
-            <div><app-painel></app-painel></div>
+        <div class="border-1 surface-border border-round m-2 text-left py-5 px-3">
             <div>
-                <div class="mt-5 flex align-items-center justify-content-center gap-2">
-                <p-button icon="pi pi-search" [rounded]="true" />
-                <p-button icon="pi pi-star-fill" [rounded]="true" severity="secondary" />
-            </div>
+                <h4 class="mb-1">{{ product.name }}</h4>
+                <h6>{{ product.description}}</h6>
             </div>
         </div>
     </ng-template>

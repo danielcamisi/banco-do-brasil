@@ -13,6 +13,9 @@ import { PainelComponent } from './painel/painel.component';
 import { CardModule } from 'primeng/card';
 import { MenubarModule } from 'primeng/menubar';
 import { MenubarComponent } from './menubar/menubar.component';
+import { ChartModule } from 'primeng/chart';
+import { ChartComponent } from './chart/chart.component';
+
 
 
 
@@ -22,6 +25,7 @@ import { MenubarComponent } from './menubar/menubar.component';
     AppCarrouselSkeleton,
     PainelComponent,
     MenubarComponent,
+    ChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,8 @@ import { MenubarComponent } from './menubar/menubar.component';
     ButtonModule,
     TagModule,
     CardModule,
-    MenubarModule
+    MenubarModule,
+    ChartModule
   ],
   providers: [AppCarrouselSkeleton,ProductService],
   bootstrap: [AppComponent]
