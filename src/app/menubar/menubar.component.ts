@@ -12,26 +12,12 @@ export class MenubarComponent implements OnInit{
     this.items = [
         {
             label: 'Conta',
-            icon: 'pi pi-fw pi-file',
-            items: [
+            icon: 'pi pi-fw pi-bookmark',
+            items: [       
                 {
-                    label: 'New',
-                    icon: 'pi pi-fw pi-plus',
-                    items: [
-                        {
-                            label: 'Bookmark',
-                            icon: 'pi pi-fw pi-bookmark'
-                        },
-                        {
-                            label: 'Video',
-                            icon: 'pi pi-fw pi-video'
-                        }
-                    ]
-                },
-                {
-                    label: 'Delete',
-                    icon: 'pi pi-fw pi-trash'
-                },
+                    label: 'Área Financeira',
+                    icon: 'pi pi-fw pi-user-minus'
+                },        
                 {
                     separator: true
                 },
@@ -42,41 +28,37 @@ export class MenubarComponent implements OnInit{
             ]
         },
         {
-            label: 'Edit',
+            label: 'Editar dados da conta',
             icon: 'pi pi-fw pi-pencil',
             items: [
                 {
-                    label: 'Left',
+                    label: 'Dados pessoais',
                     icon: 'pi pi-fw pi-align-left'
                 },
                 {
-                    label: 'Right',
+                    label: 'Dados de residência',
                     icon: 'pi pi-fw pi-align-right'
                 },
                 {
-                    label: 'Center',
+                    label: 'Foto de perfil',
                     icon: 'pi pi-fw pi-align-center'
                 },
-                {
-                    label: 'Justify',
-                    icon: 'pi pi-fw pi-align-justify'
-                }
             ]
         },
         {
-            label: 'Users',
+            label: 'Seu Perfil',
             icon: 'pi pi-fw pi-user',
             items: [
                 {
-                    label: 'New',
+                    label: 'Cartões',
                     icon: 'pi pi-fw pi-user-plus'
                 },
                 {
-                    label: 'Delete',
+                    label: 'Informações da conta',
                     icon: 'pi pi-fw pi-user-minus'
                 },
                 {
-                    label: 'Search',
+                    label: 'procurar',
                     icon: 'pi pi-fw pi-users',
                     items: [
                         {
@@ -98,29 +80,29 @@ export class MenubarComponent implements OnInit{
             ]
         },
         {
-            label: 'Events',
+            label: 'Novidades',
             icon: 'pi pi-fw pi-calendar',
             items: [
                 {
-                    label: 'Edit',
+                    label: 'Fale com um especialista',
                     icon: 'pi pi-fw pi-pencil',
                     items: [
                         {
-                            label: 'Save',
+                            label: 'Problemas com compras?',
                             icon: 'pi pi-fw pi-calendar-plus'
                         },
                         {
-                            label: 'Delete',
+                            label: 'Problemas com acessos ou cartões?',
                             icon: 'pi pi-fw pi-calendar-minus'
                         }
                     ]
                 },
                 {
-                    label: 'Archieve',
+                    label: 'Notificações em conta',
                     icon: 'pi pi-fw pi-calendar-times',
                     items: [
                         {
-                            label: 'Remove',
+                            label: 'Acessar',
                             icon: 'pi pi-fw pi-calendar-minus'
                         }
                     ]
@@ -128,7 +110,7 @@ export class MenubarComponent implements OnInit{
             ]
         },
         {
-            label: 'Quit',
+            label: 'Sair',
             icon: 'pi pi-fw pi-power-off'
         }
     ];

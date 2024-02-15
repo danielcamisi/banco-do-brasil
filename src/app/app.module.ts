@@ -15,6 +15,9 @@ import { MenubarModule } from 'primeng/menubar';
 import { MenubarComponent } from './menubar/menubar.component';
 import { ChartModule } from 'primeng/chart';
 import { ChartComponent } from './chart/chart.component';
+import { ImageModule } from 'primeng/image';
+import { TableModule } from 'primeng/table';
+
 
 
 
@@ -36,7 +39,9 @@ import { ChartComponent } from './chart/chart.component';
     TagModule,
     CardModule,
     MenubarModule,
-    ChartModule
+    ChartModule,
+    ImageModule,
+    TableModule
   ],
   providers: [AppCarrouselSkeleton,ProductService],
   bootstrap: [AppComponent]

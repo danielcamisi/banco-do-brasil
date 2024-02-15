@@ -1,4 +1,7 @@
 .divcomplete{
     display: flex;
-    align-items:center;
+    padding: 20px;
+}
+aside{
+    align-content:center;
 }
